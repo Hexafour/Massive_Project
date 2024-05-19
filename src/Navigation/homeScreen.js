@@ -1,6 +1,6 @@
 import React from "react";
-import { ImPhone } from "react-icons/im";
-import { ImArrowUpRight2 } from "react-icons/im";
+import { useNavigate } from "react-router-dom";
+import { ImPhone, ImArrowUpRight2 } from "react-icons/im";
 import CarouselHome from "./../Component/Carousel";
 import ImageCard from "../Component/bannerImage";
 import bannerProduct from "../assets/images/bannerProduct.png";
@@ -9,6 +9,8 @@ import Aperture from "../assets/images/aperture.png";
 import Airplay from "../assets/images/airplay.png";
 
 function Home() {
+  const navigate = useNavigate();
+
   return (
     <div>
       <div className="container">
@@ -27,6 +29,7 @@ function Home() {
                   <button
                     className="btn btn-outline-dark transparent-button d-flex align-items-center"
                     style={rightBorderRadius}
+                    onClick={() => navigate('/artikel')}
                   >
                     Pelajari Selengkapnya{" "}
                     <div style={circleStyle}>
@@ -157,7 +160,6 @@ const paddingBanner = {
   paddingTop: "5%",
   marginLeft: "80px",
   marginRight: "80px",
-  // margin: "80px",
 };
 
 const contentContainer = {
@@ -174,4 +176,5 @@ const DescTextStyle = {
   fontSize: "18px",
   fontFamilly: "Instrumen Sans",
 };
+
 export default Home;

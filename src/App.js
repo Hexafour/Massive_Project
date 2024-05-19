@@ -11,6 +11,7 @@ import Praktikal from "./Navigation/praktikalScreen";
 import iconWeb from "./assets/images/iconWeb.png";
 import { Button } from "react-bootstrap";
 import Footer from "./Navigation/footer";
+import ArtikelScreen from './page/ArtikelScreen';
 
 function App() {
   return (
@@ -43,6 +44,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/praktikal" element={<Praktikal />} />
+          <Route path="/artikel" element={<ArtikelScreen />} />
         </Routes>
       </div>
       <Footer />
