@@ -1,0 +1,479 @@
+.product-screen {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .product-screen .div-2 {
+    background-color: #ffffff;
+    height: 1959px;
+    position: relative;
+    width: 1440px;
+  }
+  
+  .product-screen .frame-4 {
+    align-items: flex-start;
+    background-color: #253751;
+    display: flex;
+    justify-content: space-between;
+    left: 0;
+    padding: 64px 96px;
+    position: absolute;
+    top: 1727px;
+    width: 1440px;
+  }
+  
+  .product-screen .frame-5 {
+    align-items: center;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 32px;
+    position: relative;
+  }
+  
+  .product-screen .frame-6 {
+    align-items: center;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 16px;
+    position: relative;
+  }
+  
+  .product-screen .img-wrapper {
+    align-items: center;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 10px;
+    position: relative;
+  }
+  
+  .product-screen .img {
+    height: 44.14px;
+    object-fit: cover;
+    position: relative;
+    width: 48px;
+  }
+  
+  .product-screen .text-wrapper-3 {
+    color: #ffffff;
+    font-family: "Archivo-Regular", Helvetica;
+    font-size: 28px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+    white-space: nowrap;
+    width: fit-content;
+  }
+  
+  .product-screen .vector {
+    height: 36.5px;
+    position: relative;
+    width: 1px;
+  }
+  
+  .product-screen .text-wrapper-4 {
+    color: #ffffff;
+    font-family: "Archivo-Regular", Helvetica;
+    font-size: 28px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1px;
+    position: relative;
+    white-space: nowrap;
+    width: fit-content;
+  }
+  
+  .product-screen .frame-7 {
+    align-items: flex-end;
+    display: inline-flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 16px;
+    position: relative;
+  }
+  
+  .product-screen .lyfe-copyright {
+    color: #ffffff;
+    font-family: "Instrument Sans-Regular", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1px;
+    position: relative;
+    text-align: right;
+    width: fit-content;
+  }
+  
+  .product-screen .frame-8 {
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 100px;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 10px;
+    justify-content: center;
+    padding: 8px 8px 8px 16px;
+    position: relative;
+  }
+  
+  .product-screen .text-wrapper-5 {
+    color: #253650;
+    font-family: "PP Telegraf-Regular", Helvetica;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+    white-space: nowrap;
+    width: fit-content;
+  }
+  
+  .product-screen .phone-wrapper {
+    align-items: center;
+    border: 1px solid;
+    border-color: #253650;
+    border-radius: 100px;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 10px;
+    justify-content: center;
+    padding: 8px;
+    position: relative;
+  }
+  
+  .product-screen .phone-instance {
+    height: 16px !important;
+    position: relative !important;
+    width: 16px !important;
+  }
+  
+  .product-screen .frame-9 {
+    align-items: center;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 32px;
+    left: 96px;
+    position: absolute;
+    top: 47px;
+  }
+  
+  .product-screen .component-6 {
+    align-self: stretch !important;
+    background-color: unset !important;
+    flex: 0 0 auto !important;
+    padding: 16px !important;
+    width: 100% !important;
+  }
+  
+  .product-screen .frame-10 {
+    align-items: center;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 32px;
+    justify-content: center;
+    position: relative;
+    width: 1248px;
+  }
+  
+  .product-screen .overlap-group-wrapper {
+    background-color: #e0e0e0;
+    border-radius: 20px;
+    height: 340px;
+    overflow: hidden;
+    position: relative;
+    width: 1248px;
+  }
+  
+  .product-screen .overlap-group {
+    height: 344px;
+    position: relative;
+  }
+  
+  .product-screen .unsplash-qrwadbcqysc {
+    height: 340px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 1248px;
+  }
+  
+  .product-screen .div-wrapper {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+    left: 0;
+    padding: 128px 64px;
+    position: absolute;
+    top: 0;
+    width: 1248px;
+  }
+  
+  .product-screen .p {
+    -webkit-text-stroke: 0.7px #ffffff;
+    color: #ffffff;
+    font-family: "Archivo-Regular", Helvetica;
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-left: -0.7px;
+    margin-top: -1.7px;
+    position: relative;
+    width: 625px;
+  }
+  
+  .product-screen .frame-11 {
+    align-items: flex-start;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    gap: 32px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .product-screen .pill {
+    align-items: flex-start;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    height: 554px;
+    padding: 32px;
+    position: relative;
+    width: 343px;
+  }
+  
+  .product-screen .frame-12 {
+    align-items: center;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    gap: 32px;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+  }
+  
+  .product-screen .text-wrapper-6 {
+    -webkit-text-stroke: 0.7px #1f2223;
+    color: #1f2223;
+    flex: 1;
+    font-family: "Archivo-Regular", Helvetica;
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-left: -0.7px;
+    margin-top: -1.7px;
+    position: relative;
+  }
+  
+  .product-screen .frame-13 {
+    align-items: flex-start;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 16px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .product-screen .frame-14 {
+    align-items: flex-start;
+    align-self: stretch;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    padding: 32px 16px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .product-screen .text-wrapper-7 {
+    color: #1f2223;
+    font-family: "Instrument Sans-Medium", Helvetica;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1px;
+    position: relative;
+    width: fit-content;
+  }
+  
+  .product-screen .frame-15 {
+    align-items: flex-start;
+    background-color: #d6d6d6;
+    border-radius: 10px;
+    display: inline-flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    margin-right: -16px;
+    padding: 32px 16px;
+    position: relative;
+  }
+  
+  .product-screen .frame-16 {
+    align-items: flex-start;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 32px;
+    position: relative;
+  }
+  
+  .product-screen .frame-17 {
+    align-items: flex-start;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 32px;
+    padding: 16px 16px 32px;
+    position: relative;
+  }
+  
+  .product-screen .frame-18 {
+    align-self: stretch;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    height: 240px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+  
+  .product-screen .frame-wrapper {
+    background-image: url(./unsplash-qrwadbcqysc-2.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 240px;
+    width: 388px;
+  }
+  
+  .product-screen .heart-wrapper {
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 100px;
+    display: inline-flex;
+    gap: 10px;
+    justify-content: center;
+    left: 328px;
+    padding: 8px;
+    position: relative;
+    top: 20px;
+  }
+  
+  .product-screen .heart-instance {
+    height: 24px !important;
+    position: relative !important;
+    width: 24px !important;
+  }
+  
+  .product-screen .frame-19 {
+    align-items: flex-start;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 16px;
+    padding: 0px 16px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .product-screen .text-wrapper-8 {
+    color: #1f2223;
+    font-family: "Instrument Sans-SemiBold", Helvetica;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1px;
+    position: relative;
+    width: fit-content;
+  }
+  
+  .product-screen .overlap-group-2 {
+    background-image: url(./image.png);
+    background-size: 100% 100%;
+    height: 240px;
+    width: 388px;
+  }
+  
+  .product-screen .text-wrapper-9 {
+    align-self: stretch;
+    color: #1f2223;
+    font-family: "Instrument Sans-SemiBold", Helvetica;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1px;
+    position: relative;
+  }
+  
+  .product-screen .overlap-group-3 {
+    background-image: url(./unsplash-qrwadbcqysc-3.png);
+    background-size: 100% 100%;
+    height: 240px;
+    width: 388px;
+  }
+  
+  .product-screen .overlap-group-4 {
+    background-image: url(./unsplash-qrwadbcqysc-4.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 240px;
+    width: 388px;
+  }
+  
+  .product-screen .overlap-group-5 {
+    background-image: url(./unsplash-qrwadbcqysc-5.png);
+    background-size: 100% 100%;
+    height: 240px;
+    left: 1px;
+    position: relative;
+    width: 388px;
+  }
+  
+  .product-screen .heart-instance-wrapper {
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 100px;
+    display: inline-flex;
+    gap: 10px;
+    justify-content: center;
+    left: 327px;
+    padding: 8px;
+    position: relative;
+    top: 20px;
+  }
+  
+  .product-screen .overlap-group-6 {
+    background-image: url(./unsplash-qrwadbcqysc-6.png);
+    background-size: 100% 100%;
+    height: 240px;
+    width: 388px;
+  }
+  
