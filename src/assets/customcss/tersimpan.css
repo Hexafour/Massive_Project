@@ -1,0 +1,19 @@
+.tersimpan {
+    background-color: #f2f2f2;
+    border-radius: 20px;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: #D7D7D7;
+    color: #1F2223;
+  }
+
+.nav-tabs .nav-link {
+    color: #1F2223;
+    padding: 20px;
+    text-align: left;
+    border: 0.5px solid #C5C5C5;
+}
+
+  
+
