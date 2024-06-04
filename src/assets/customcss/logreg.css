@@ -1,0 +1,8 @@
+.form-login {
+  background-color: #E7F2F9;
+  border-radius: 20px;
+}
+
+.input-login::placeholder {
+  color: #C2C2C2;
+}

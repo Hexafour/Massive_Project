@@ -4,19 +4,22 @@ import Home from './Navigation/homeScreen';
 import Praktikal from './Navigation/praktikalScreen';
 import Navbar from './Component/Navbar'
 import Tersimpan from './Navigation/Tersimpan';
+import Login from './Navigation/login'
+import Register from './Navigation/register'
+import Catatan from './Navigation/catatan';
 
 function App() {
   return (
     
     <Router>
       <div>
-        <div style={container}>
-          <Navbar />
-        </div>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/praktikal" element={<Praktikal />} />
           <Route path="/tersimpan" element={<Tersimpan />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/catatan" element={<Catatan />} />
         </Routes>
       </div>
     </Router>

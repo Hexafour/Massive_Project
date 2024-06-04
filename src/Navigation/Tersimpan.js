@@ -6,15 +6,16 @@ import Gambar from "../assets/images/Article_Card1.png"
 import { Col, Container, Row } from 'react-bootstrap'  
 import Logo from "../assets/images/iconWeb.png"
 import { ImPhone } from "react-icons/im";
+import Navbar from "../Component/Navbar"
 
 
 const cardsData = [
+  { imgsrc: Gambar, title: 'Smart Watch' },
   { imgsrc: Gambar, title: 'Shoes' },
   { imgsrc: Gambar, title: 'Headband' },
-  { imgsrc: Gambar, title: 'Makanan' },
-  { imgsrc: Gambar, title: 'Suplemen' },
-  { imgsrc: Gambar, title: 'Alat Olahraga' },
-  { imgsrc: Gambar, title: 'Wristband' },
+  { imgsrc: Gambar, title: 'Protein Concentrate' },
+  { imgsrc: Gambar, title: 'Resistance Band' },
+  { imgsrc: Gambar, title: 'Electric Toothbrush' },
 ];
 
 const cardsData2 = [
@@ -39,6 +40,7 @@ const cardsData3 = [
 function Tersimpan() {
     return (
      <>
+     <Navbar />
      <div className='tersimpan mt-5 p-3 mx-5'>
 
     <h2 className='fs-3'>Item Tersimpan</h2> 
@@ -117,6 +119,7 @@ const Footer = () => (
 
   </footer>
 )
+
 
 const circleStyle = {
   width: "25px",

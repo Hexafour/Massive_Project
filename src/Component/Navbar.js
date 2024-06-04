@@ -20,9 +20,11 @@ function Navbar() {
             <NavLink to="/tips" style={linkStyle}>
               Price
             </NavLink>
+            <NavLink to="/login" style={linkStyle}>
             <Button type="button" className='btn btn-primary btn-md'>
               Login
             </Button>
+            </NavLink>
           </div>
         </nav>
     )
