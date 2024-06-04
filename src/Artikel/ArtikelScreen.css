@@ -15,3 +15,12 @@
     background-color: #ECF4FA;
     color: #404040;
 }
+
+.borderprimary {
+    border: solid 1px #1F76F8;
+    border-radius: 15px;
+}
+
+.fsp {
+    font-size: 18px;
+}

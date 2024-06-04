@@ -11,7 +11,9 @@ import Praktikal from "./Navigation/praktikalScreen";
 import iconWeb from "./assets/images/iconWeb.png";
 import { Button } from "react-bootstrap";
 import Footer from "./Navigation/footer";
-import ArtikelScreen from './page/ArtikelScreen';
+import ArtikelScreen from "./Artikel/ArtikelScreen";
+import ArtikelScreen_2 from "./Artikel/ArtikelScreen_2";
+import PengaturanAkun from "./Pages/PengaturanAkun";
 
 function App() {
   return (
@@ -45,6 +47,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/praktikal" element={<Praktikal />} />
           <Route path="/artikel" element={<ArtikelScreen />} />
+          <Route path="/artikel_2" element={<ArtikelScreen_2 />} />
+          <Route path="/pengaturan_akun" element={<PengaturanAkun />} />
         </Routes>
       </div>
       <Footer />
