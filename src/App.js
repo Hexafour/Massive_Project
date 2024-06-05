@@ -14,6 +14,7 @@ import Footer from "./Navigation/footer";
 import ArtikelScreen from "./Artikel/ArtikelScreen";
 import ArtikelScreen_2 from "./Artikel/ArtikelScreen_2";
 import PengaturanAkun from "./Pages/PengaturanAkun";
+import Catatanku from "./Pages/catatanku";
 
 function App() {
   return (
@@ -49,6 +50,7 @@ function App() {
           <Route path="/artikel" element={<ArtikelScreen />} />
           <Route path="/artikel_2" element={<ArtikelScreen_2 />} />
           <Route path="/pengaturan_akun" element={<PengaturanAkun />} />
+          <Route path="/catatanku" element={<Catatanku />} />
         </Routes>
       </div>
       <Footer />
