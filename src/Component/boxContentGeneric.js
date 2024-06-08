@@ -1,16 +1,23 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+import { ImArrowUpRight2 } from "react-icons/im";
 
-const BoxContent = ({ imageSrc, title, subtitle }) => {
+const BoxContent = ({
+  imageSrc,
+  title,
+  subtitle,
+  link,
+  isButton = false,
+  isTutorial = false,
+}) => {
+  const navigate = useNavigate();
+
   const cardStyles = {
-    backgroundColor: "#f0f0f0",
-    borderRadius: "20px",
-    padding: "50px",
-    maxWidth: "600px",
-    margin: "20px",
+    backgroundColor: "#ECF4FA",
   };
 
   const imgStyles = {
-    width: "72px",
+    width: "auto",
     height: "auto",
   };
 
@@ -43,15 +50,86 @@ const BoxContent = ({ imageSrc, title, subtitle }) => {
     paddingTop: "30px",
   };
 
+  const openButtonContainer = {
+    paddingTop: "5%",
+  };
+
+  const circleBtnStyle = {
+    width: "25px",
+    height: "25px",
+    borderRadius: "50%",
+    border: "1px solid",
+    alignSelf: "center",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    marginLeft: "10px",
+  };
+
+  const openButtonStyle = {
+    borderRadius: "30px",
+    backgroundColor: "white",
+  };
+
+  const redirectToPage = (link) => () => {
+    navigate(link);
+  };
+
   return (
-    <div style={cardStyles}>
-      <div style={circleStyle}>
-        <img src={imageSrc} alt="CardImage" style={imgStyles} />
+    <div style={cardStyles} className="col p-5 rounded-3">
+      {/* <a href={link} style={{ textDecoration: 'none', color: 'inherit' }}> */}
+      {!isTutorial ? (
+        <div style={circleStyle} className="">
+          <img src={imageSrc} alt="CardImage" />
+        </div>
+      ) : null}
+      <div style={!isTutorial ? paddingDesc : null}>
+        {isTutorial ? (
+          <div style={{ display: "flex", alignItems: "center" }}>
+            <div style={{ flex: 1, marginRight: "20px" }}>
+              <h3 style={titleStyles}>{title}</h3>
+              <h5 style={subtitleStyles}>{subtitle}</h5>
+              {isButton && (
+                <div style={openButtonContainer}>
+                  <button
+                    className="btn btn-light btn-lg d-flex align-items-center"
+                    style={openButtonStyle}
+                    onClick={redirectToPage(link)}
+                  >
+                    Buka
+                    <div style={circleBtnStyle}>
+                      <ImArrowUpRight2 />
+                    </div>
+                  </button>
+                </div>
+              )}
+            </div>
+            <div>
+              <img src={imageSrc} alt="CardImage" />
+            </div>
+          </div>
+        ) : (
+          <div>
+            <h3 style={titleStyles}>{title}</h3>
+            <h5 style={subtitleStyles}>{subtitle}</h5>
+            {isButton ? (
+              <div style={openButtonContainer}>
+                <button
+                  className="btn btn-light btn-lg d-flex align-items-center"
+                  style={openButtonStyle}
+                  onClick={redirectToPage}
+                >
+                  Buka
+                  <div style={circleBtnStyle}>
+                    <ImArrowUpRight2 />
+                  </div>
+                </button>
+              </div>
+            ) : null}
+          </div>
+        )}
       </div>
-      <div style={paddingDesc}>
-        <h3 style={titleStyles}>{title}</h3>
-        <h5 style={subtitleStyles}>{subtitle}</h5>
-      </div>
+      {/* </a> */}
     </div>
   );
 };

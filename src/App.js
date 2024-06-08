@@ -1,5 +1,4 @@
-import React from "react";
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import {
   BrowserRouter as Router,
   Route,
@@ -9,23 +8,21 @@ import {
 } from "react-router-dom";
 import Home from "./Navigation/homeScreen";
 import Praktikal from "./Navigation/praktikalScreen";
-import Navbar from './Component/Navbar'
+import Navbar from "./Component/Navbar";
 import iconWeb from "./assets/images/iconWeb.png";
 import { Button } from "react-bootstrap";
 import Footer from "./Navigation/footer";
 import ArtikelScreen from "./Artikel/ArtikelScreen";
 import ArtikelScreen_2 from "./Artikel/ArtikelScreen_2";
-import Tersimpan from './Navigation/Tersimpan';
-import Login from './Navigation/login'
-import Register from './Navigation/register'
+import Tersimpan from "./Navigation/Tersimpan";
+import Login from "./Navigation/login";
+import Register from "./Navigation/register";
 import PengaturanAkun from "./Pages/PengaturanAkun";
 import Catatanku from "./Pages/catatanku";
-import Catatan from './Navigation/catatan';
-
+import Catatan from "./Navigation/catatan";
 
 function App() {
   return (
-    
     <Router>
       <div>
         <Routes>
@@ -46,7 +43,7 @@ function App() {
 }
 
 const container = {
-  padding: '0 2rem'
+  padding: "0 2rem",
 };
 
 export default App;
