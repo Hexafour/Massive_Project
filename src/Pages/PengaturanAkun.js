@@ -31,11 +31,11 @@ const PengaturanAkun = () => {
             </div>
             <div className="d-flex align-items-center mt-4">
               <label style={{ width: "100px" }}>Email</label>
-              <input type="text" className="form-control ms-5"></input>
+              <input type="email" className="form-control ms-5"></input>
             </div>
             <div className="d-flex align-items-center mt-4">
               <label style={{ width: "100px" }}>Password</label>
-              <input type="text" className="form-control ms-5"></input>
+              <input type="password" className="form-control ms-5"></input>
             </div>
           </div>
         </div>

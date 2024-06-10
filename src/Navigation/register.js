@@ -39,7 +39,7 @@ function Register() {
                  <Form.Control
                  className='input-login'
                  type="text"
-                 placeholder="Enter Name"
+                 placeholder="Masukkan Nama Anda"
                  style={{
                    width: "100%",
                    border: "none",
@@ -54,7 +54,7 @@ function Register() {
                   <Form.Control
                   className='input-login'
                   type="email"
-                  placeholder="Enter email"
+                  placeholder="Masukkan Email"
                   style={{
                     width: "100%",
                     border: "none",
@@ -81,11 +81,11 @@ function Register() {
                 </Form.Group>
                 
                 <Button variant="primary" type="submit" className='w-100' style={{height: '45px'}}>
-                  Submit
+                  Registrasi
                 </Button>
               </Form>
             <div className='px-3'>
-            <p className='text-primary text-center mt-3'>Already Have an Account? <Link to='/login'>Login Here</Link></p>
+            <p className='text-primary text-center mt-3'>Sudah Memiliki Akun? <Link to='/login'>Login Disini</Link></p>
             </div>
             </div>
           </Col>

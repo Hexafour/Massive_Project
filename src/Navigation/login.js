@@ -40,7 +40,7 @@ function Login() {
                   <Form.Control
                   className='input-login'
                   type="email"
-                  placeholder="Enter email"
+                  placeholder="Masukkan Email"
                   style={{
                     width: "100%",
                     border: "none",
@@ -66,14 +66,14 @@ function Login() {
                 />
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                  <a className= 'text-dark' href='forgot'>Forgot Password</a>
+                  <a className= 'text-dark' href='forgot'>Lupa Password</a>
                 </Form.Group>
                 <Button variant="primary" type="submit" className='w-100' style={{height: '45px'}}>
-                  Submit
+                  Masuk
                 </Button>
               </Form>
             <div className='px-3'>
-            <p className='text-primary text-center mt-3'>Don't Have an Account?  <Link to='/register'>Create Your Account</Link></p>
+            <p className='text-primary text-center mt-3'>Tidak Memiliki Akun?  <Link to='/register'>Buat Akun Anda</Link></p>
             </div>
             </div>
           </Col>

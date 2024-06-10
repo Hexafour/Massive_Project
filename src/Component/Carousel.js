@@ -7,16 +7,21 @@ const images = [
   {
     src: require("../assets/images/Article_Card1.png"),
     title: "Peran Teknologi Dalam Gaya Hidup Sehat",
-    link: "/image1",
+    link: "/artikel",
   },
   {
-    src: "https://via.placeholder.com/400",
-    title: "Image 2",
+    src: require("../assets/images/artikel3.jpeg"),
+    title: "Gaya Hidup Sehat Tidak Harus Mahal",
     link: "/image2",
   },
   {
-    src: "https://via.placeholder.com/400",
-    title: "Image 3",
+    src: require("../assets/images/artikel1.png"),
+    title: "Kebiasaaan Olahraga Mudah Dipraktikan",
+    link: "/artikel_2",
+  },
+  {
+    src: require("../assets/images/artikel2.png"),
+    title: "Seperti Apa Sih BMI Ideal?",
     link: "/image3",
   },
 ];

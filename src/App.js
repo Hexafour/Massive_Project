@@ -20,6 +20,7 @@ import Register from "./Navigation/register";
 import PengaturanAkun from "./Pages/PengaturanAkun";
 import Catatanku from "./Pages/catatanku";
 import Catatan from "./Navigation/catatan";
+import Tutorial from "./Navigation/tutorial"
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
           <Route path="/pengaturan_akun" element={<PengaturanAkun />} />
           <Route path="/catatanku" element={<Catatanku />} />
           <Route path="/catatan" element={<Catatan />} />
+          <Route path="/tutorial" element={<Tutorial />} />
         </Routes>
       </div>
     </Router>

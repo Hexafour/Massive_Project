@@ -18,7 +18,7 @@ function Navbar() {
           Praktikal
         </NavLink>
         <NavLink to="/tips" style={linkStyle}>
-          Price
+          Produk
         </NavLink>
         <NavLink to="/login" style={linkStyle}>
           <Button type="button" className="btn btn-primary btn-md">

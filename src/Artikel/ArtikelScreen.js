@@ -4,8 +4,14 @@ import "animate.css/animate.min.css";
 import "aos/dist/aos.css";
 import AOS from "aos";
 import "./ArtikelScreen.css";
+import Navbar from "../Component/Navbar"
+import Footer from "../Navigation/footer"
 import MaterialIcon, { colorPalette } from "material-icons-react";
 import AppShortcutOutlinedIcon from "@mui/icons-material/AppShortcutOutlined";
+import ThumbUpOutlinedIcon from "@mui/icons-material/ThumbUpOutlined";
+import BookmarkBorderOutlinedIcon from "@mui/icons-material/BookmarkBorderOutlined";
+import CheckBoxOutlinedIcon from "@mui/icons-material/CheckBoxOutlined";
+import TextSnippetOutlinedIcon from "@mui/icons-material/TextSnippetOutlined";
 
 const ArtikelScreen = () => {
   useEffect(() => {
@@ -14,6 +20,7 @@ const ArtikelScreen = () => {
 
   return (
     <main>
+      <Navbar />
       <div className="container mt-5 rounded-4 overflow-hidden">
         <div className="row">
           <div className="col-12 col-md-6 p-5">
@@ -241,32 +248,48 @@ const ArtikelScreen = () => {
           <span>Aksi</span>
         </h4>
         <div className="row">
-          <a href="https://www.google.com" className="col-12 col-lg-3">
-            <div className="border px-3 py-3 rounded-3 d-flex">
-              <MaterialIcon icon="home" size={32} />
-              <h5 className="ps-2">Suka</h5>
+          <a
+            href="https://www.google.com"
+            className="col-12 col-lg-3 text-decoration-none align-items-center"
+          >
+            <div className="border px-3 py-3 rounded-3 d-flex text-black">
+              <ThumbUpOutlinedIcon sx={{ fontSize: 32 }} className="mx-2" />
+              <h5 className="ps-2 pt-1">Suka</h5>
             </div>
           </a>
-          <a href="https://www.google.com" className="col-12 col-lg-3">
-            <div className="border px-3 py-3 rounded-3 d-flex">
-              <span className="material-symbols-outlined">deployed_code</span>
-              <h5 className="ps-2">Simpan</h5>
+          <a
+            href="https://www.google.com"
+            className="col-12 col-lg-3 text-decoration-none align-items-center"
+          >
+            <div className="border px-3 py-3 rounded-3 d-flex text-black">
+              <BookmarkBorderOutlinedIcon
+                sx={{ fontSize: 32 }}
+                className="mx-2"
+              />
+              <h5 className="ps-2 pt-1">Simpan</h5>
             </div>
           </a>
-          <a href="https://www.google.com" className="col-12 col-lg-3">
-            <div className="border px-3 py-3 rounded-3 d-flex">
-              <span className="material-symbols-outlined">deployed_code</span>
-              <h5 className="ps-2">Tandai dibaca</h5>
+          <a
+            href="https://www.google.com"
+            className="col-12 col-lg-3 text-decoration-none align-items-center"
+          >
+            <div className="border px-3 py-3 rounded-3 d-flex text-black">
+              <CheckBoxOutlinedIcon sx={{ fontSize: 32 }} className="mx-2" />
+              <h5 className="ps-2 pt-1">Tandai Dibaca</h5>
             </div>
           </a>
-          <a href="https://www.google.com" className="col-12 col-lg-3">
-            <div className="border px-3 py-3 rounded-3 d-flex">
-              <span className="material-symbols-outlined">deployed_code</span>
-              <h5 className="ps-2">Catatanku</h5>
+          <a
+            href="https://www.google.com"
+            className="col-12 col-lg-3 text-decoration-none align-items-center"
+          >
+            <div className="border px-3 py-3 rounded-3 d-flex text-black">
+              <TextSnippetOutlinedIcon sx={{ fontSize: 32 }} className="mx-2" />
+              <h5 className="ps-2 pt-1">Catatan</h5>
             </div>
           </a>
         </div>
       </div>
+      <Footer />
     </main>
   );
 };
