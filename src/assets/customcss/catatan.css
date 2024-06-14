@@ -1,0 +1,14 @@
+.custom-dropdown-button {
+  background-color: #253751 !important;  /* Warna background dropdown button */
+  color: #fff !important;                /* Warna teks dropdown button */
+}
+
+.custom-dropdown-item {
+  background-color: #253751 !important;  /* Warna background item dropdown */
+  color: #fff !important;                /* Warna teks item dropdown */
+}
+
+.custom-dropdown-item:hover {
+  background-color: rgb(7, 68, 133) !important;  /* Warna background item dropdown saat hover */
+  color: #fff !important;                /* Warna teks item dropdown saat hover */
+}

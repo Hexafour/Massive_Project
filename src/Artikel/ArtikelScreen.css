@@ -1,0 +1,26 @@
+.bg-image {
+    background-image: url(../assets/images/image1.png); 
+    width: 100%; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    overflow: hidden;
+}
+
+.ccontrast {
+    background-color: #1F76F8;
+    color: white;
+}
+
+.clight {
+    background-color: #ECF4FA;
+    color: #404040;
+}
+
+.borderprimary {
+    border: solid 1px #1F76F8;
+    border-radius: 15px;
+}
+
+.fsp {
+    font-size: 18px;
+}
