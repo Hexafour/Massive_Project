@@ -4,8 +4,8 @@ import "animate.css/animate.min.css";
 import "aos/dist/aos.css";
 import AOS from "aos";
 import "./ArtikelScreen.css";
-import Navbar from "../Component/Navbar"
-import Footer from "../Navigation/footer"
+import Navbar from "../Component/Navbar";
+import Footer from "../Navigation/footer";
 import MaterialIcon, { colorPalette } from "material-icons-react";
 import AppShortcutOutlinedIcon from "@mui/icons-material/AppShortcutOutlined";
 import ThumbUpOutlinedIcon from "@mui/icons-material/ThumbUpOutlined";

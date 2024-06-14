@@ -22,13 +22,19 @@ const ImageCard = ({
   if (isImageIn) {
     return (
       <div
-        className="container p-5 rounded-4"
+        className="card"
         style={{
+          width: "100%",
+          height: "341px",
+          borderRadius: "20px",
           backgroundColor: "#1F76F8",
         }}
       >
-        <div className="row col-12">
-          <div className="col-12 col-lg-7">
+        <div
+          className="card-body"
+          style={{ display: "flex", alignItems: "center", padding: "50px" }}
+        >
+          <div style={{ flex: "1", marginRight: "20px" }}>
             <h5 className="card-title" style={txtStylesTitle}>
               {title}
             </h5>
@@ -49,7 +55,9 @@ const ImageCard = ({
               </button>
             </div>
           </div>
-          <div className="col-12 col-lg-5"></div>
+          <div>
+            <img src={imageSrc} alt="CardImage" style={imgStyles} />
+          </div>
         </div>
       </div>
     );

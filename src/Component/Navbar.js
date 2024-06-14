@@ -1,8 +1,12 @@
-import iconWeb from "../assets/images/iconWeb.png";
-import { Button } from "react-bootstrap";
+import React, { useContext } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { Dropdown, Button } from "react-bootstrap";
+import iconWeb from "../assets/images/iconWeb.png";
+import AuthContext from "../context/AuthContext";
 
 function Navbar() {
+  const { user, logout } = useContext(AuthContext);
+
   return (
     <nav className="container sticky-top" style={navStyle}>
       <div style={leftSideStyle}>
@@ -17,14 +21,25 @@ function Navbar() {
         <NavLink to="/praktikal" style={linkStyle}>
           Praktikal
         </NavLink>
-        <NavLink to="/tips" style={linkStyle}>
+        <NavLink to="/produk" style={linkStyle}>
           Produk
         </NavLink>
-        <NavLink to="/login" style={linkStyle}>
-          <Button type="button" className="btn btn-primary btn-md">
-            Login
-          </Button>
-        </NavLink>
+        {user ? (
+          <Dropdown>
+            <Dropdown.Toggle variant="primary" id="dropdown-basic">
+              {user.name}
+            </Dropdown.Toggle>
+            <Dropdown.Menu>
+              <Dropdown.Item onClick={logout}>Logout</Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
+        ) : (
+          <NavLink to="/login" style={linkStyle}>
+            <Button type="button" className="btn btn-primary btn-md">
+              Login
+            </Button>
+          </NavLink>
+        )}
       </div>
     </nav>
   );
@@ -52,18 +67,12 @@ const logoStyle = {
   fontSize: "1.5rem",
 };
 
-const iconStyle = {
-  fontSize: "1.2rem",
-  margin: "0 0.5rem",
-};
-
 const linkStyle = {
   marginRight: "1rem",
   textDecoration: "none",
-  color: "black", // default color
+  color: "black",
 };
 
-// aktif page
 function NavLink({ to, style, children }) {
   const location = useLocation();
 

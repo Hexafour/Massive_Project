@@ -4,8 +4,8 @@ import "animate.css/animate.min.css";
 import "aos/dist/aos.css";
 import AOS from "aos";
 import "./ArtikelScreen.css";
-import Navbar from "../Component/Navbar"
-import Footer from "../Navigation/footer"
+import Navbar from "../Component/Navbar";
+import Footer from "../Navigation/footer";
 import AppShortcutOutlinedIcon from "@mui/icons-material/AppShortcutOutlined";
 import WatchIcon from "@mui/icons-material/Watch";
 import ChecklistRtlIcon from "@mui/icons-material/ChecklistRtl";

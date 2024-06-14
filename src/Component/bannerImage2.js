@@ -33,7 +33,8 @@ const ImageCard = ({
               {title}
             </h5>
             <p className="card-text" style={txtStylesDesc}>
-            Dapatkan motivasi harian dari Lyfe untuk membuatmu tetap semangat menerapkan Gaya Hidup Sehat
+              Dapatkan motivasi harian dari Lyfe untuk membuatmu tetap semangat
+              menerapkan Gaya Hidup Sehat
             </p>
           </div>
           <div className="col-12 col-lg-5"></div>
@@ -88,7 +89,7 @@ const txtStylesTitle = {
 const txtStylesDesc = {
   fontSize: "18px",
   color: "white",
-  paddingTop: "20px"
+  paddingTop: "20px",
 };
 
 const imgStyles = {

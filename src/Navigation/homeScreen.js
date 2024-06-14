@@ -20,8 +20,11 @@ import Langkah4 from "../assets/images/langkah4.png";
 import BannerTwo from "../assets/images/bannerTwo.png";
 import SwipeToSlide from "./../Component/Slider";
 import Personal_Form from "../Component/formPersonal";
+import Kalkulator from "../Component/kalkulator";
 import Navbar from "../Component/Navbar";
 import Footer from "../Navigation/footer";
+import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -41,15 +44,17 @@ function Home() {
                 </p>
               </div>
               <div>
-                <button
-                  className="btn btn-outline-dark transparent-button d-flex align-items-center mb-3"
-                  style={rightBorderRadius}
-                >
-                  Pelajari Selengkapnya{" "}
-                  <div style={circleStyle}>
-                    <ImArrowUpRight2 />
-                  </div>
-                </button>
+                <Link to="/artikel" className="text-decoration-none">
+                  <button
+                    className="btn btn-outline-dark transparent-button d-flex align-items-center mb-3"
+                    style={rightBorderRadius}
+                  >
+                    Apa itu Gaya Hidup Sehat?{" "}
+                    <div style={circleStyle}>
+                      <ImArrowUpRight2 />
+                    </div>
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -61,17 +66,19 @@ function Home() {
 
       <div className="mt-4 mb-5 container">
         <ImageCard
-          imageSrc={BannerTwo}
           title="Motivasi Untuk Kamu"
           txtStyles={txtCardStyles}
           isDescription={false}
           isButtonOpen={true}
           isImageIn={true}
+          imageSrc={BannerTwo}
         />
       </div>
 
       <div className="container my-5 py-5">
-        <div className="col-12 col-md-6">
+        <Kalkulator />
+
+        {/* <div className="col-12 col-md-6">
           <h1>Kalkulator Gaya Hidup</h1>
           <p>
             Badan yang sehat adalah salah satu tujuan dari penerapan gaya hidup
@@ -153,7 +160,7 @@ function Home() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
 
       <div className="container my-5 py-5">
